@@ -9,8 +9,8 @@ export interface Geolocation {
 
 export interface ReportEntry {
   id: string; // Client-side unique ID for lists
-  imageFile: File | null; // For new uploads
-  imageUrl: string | null; // For existing images
+  imageFiles: File[]; // For new uploads
+  imageUrls: string[]; // For existing images
   description: string;
   geolocation?: Geolocation | null;
 }
@@ -20,9 +20,10 @@ export interface ReportEntry {
 export interface Report {
   id?: string;
   title: string;
+  clientName: string;
   reporterName: string;
   entries: {
-    imageUrl: string;
+    imageUrls: string[];
     description: string;
     geolocation?: Geolocation | null;
   }[];
@@ -35,9 +36,10 @@ export interface Report {
 export type ClientReport = {
   id: string;
   title: string;
+  clientName: string;
   reporterName:string;
   entries: {
-    imageUrl: string;
+    imageUrls: string[];
     description: string;
     geolocation?: Geolocation | null;
   }[];

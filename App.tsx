@@ -95,15 +95,17 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-slate-100 font-sans">
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
       <Header 
         onNavigateToDashboard={handleNavigateToDashboard}
         onNavigateToForm={handleNavigateToForm}
       />
       <main className="p-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
-        {renderMainContent()}
+        <div key={view} className="animate-page-enter">
+            {renderMainContent()}
+        </div>
       </main>
-      <footer className="text-center p-6 text-slate-500 text-sm">
+      <footer className="text-center p-6 text-gray-500 text-sm">
         <p>&copy; {new Date().getFullYear()} Power Energy Distribution. Todos los derechos reservados.</p>
         <a href="https://www.powercorp.com.pe" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
           www.powercorp.com.pe
