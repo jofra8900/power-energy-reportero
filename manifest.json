@@ -1,0 +1,20 @@
+{
+  "short_name": "Reportero",
+  "name": "Power Energy - Reportero de Campo",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/qBycJVmj/powerpnglogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://i.postimg.cc/qBycJVmj/powerpnglogo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#f1f5f9"
+}

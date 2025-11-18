@@ -1,0 +1,8 @@
+{
+  "name": "Power Energy Field Reporter",
+  "description": "Aplicación web corporativa para que los empleados de Power Energy Distribution creen pre-informes desde el campo. Los usuarios pueden tomar fotos y agregar descripciones del progreso del proyecto, que luego se compilan para ayudar a los ingenieros a crear los informes técnicos finales.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
